@@ -1,14 +1,17 @@
-module.exports = Strings_1_1 = (function () {
+module.exports = isUnique = (function () {
   return {
     isUnique: function (str) {
-      var charset = Array.apply(null, Array(256)).map(Boolean.prototype.valueOf, false);
+      var char_set = Array.apply(null, Array(256)).map(Boolean.prototype.valueOf, false);
       for (var i = 0; i < str.length; i++) {
-        if(charset[i] == str[i]){
+        if(char_set[str[i].charCodeAt(0)]){
           return false;
         }
-        charset[i] = str[i];
+        char_set[str[i].charCodeAt(0)] = true 
       }
       return true;  
     }
   }
 }())
+
+console.log(isUnique.isUnique('legarbo'))
+console.log(isUnique.isUnique('leopoldo'))
