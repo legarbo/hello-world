@@ -1,4 +1,4 @@
-module.exports = isUnique = (function () {
+module.exports = thisString = (function () {
   return {
     isUnique: function (str) {
       var char_set = Array.apply(null, Array(256)).map(Boolean.prototype.valueOf, false);
@@ -13,5 +13,5 @@ module.exports = isUnique = (function () {
   }
 }())
 
-console.log(isUnique.isUnique('legarbo'))
-console.log(isUnique.isUnique('leopoldo'))
+console.log(thisString.isUnique('legarbo'))
+console.log(thisString.isUnique('leopoldo'))
