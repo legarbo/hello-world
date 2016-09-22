@@ -15,3 +15,4 @@ module.exports = thisString = (function () {
 
 console.log(thisString.isUnique('legarbo'))
 console.log(thisString.isUnique('leopoldo'))
+EXTRA
